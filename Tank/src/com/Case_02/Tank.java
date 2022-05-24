@@ -1,4 +1,4 @@
-package com.Case02;
+package com.Case_02;
 
 public class Tank {
 
