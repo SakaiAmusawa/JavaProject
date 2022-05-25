@@ -4,7 +4,7 @@ public class Tank {
     private int x = 100;
     private int y = 100;
 
-    private String url = "img/tank_T34.png";
+    private String url = "img/tank.gif";
 
     public int getX() {
         return x;
