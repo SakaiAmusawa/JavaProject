@@ -1,4 +1,4 @@
-package com.Case_03;
+package Test.Case_03;
 
 public class Tank {
     private int x = 100;

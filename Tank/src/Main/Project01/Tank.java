@@ -1,4 +1,4 @@
-package com.Project.P01;
+package Main.Project01;
 
 public class Tank {
     private int x;

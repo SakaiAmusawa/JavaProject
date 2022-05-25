@@ -1,12 +1,12 @@
-package com.Case_01;
+package Test.Case_02;
 
 public class Tank {
-    String name = "T-34";
-    int life = 100;
-    int speed = 10;
 
+    String name = "T-34";
+    int speed = 10;
     int x = 100;
     int y = 100;
+    private int life = 100;
 
     public void showTankInfo() {
         System.out.println("坦克的名字：" + name);
@@ -22,4 +22,14 @@ public class Tank {
     public void fire() {
         System.out.println("发射炮弹");
     }
+
+    public int getLife() {
+        return life;
+    }
+
+    public void reduceLife() {
+        life = life - 10;
+    }
 }
+
+

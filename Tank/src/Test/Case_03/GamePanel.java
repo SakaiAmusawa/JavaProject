@@ -1,4 +1,4 @@
-package com.Case_03;
+package Test.Case_03;
 
 import javax.swing.*;
 import java.awt.*;

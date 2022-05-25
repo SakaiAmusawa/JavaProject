@@ -1,4 +1,4 @@
-package com.Expanding_practice.spoils;
+package Test.spoils;
 
 import javax.swing.*;
 import java.awt.*;

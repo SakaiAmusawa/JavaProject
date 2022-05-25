@@ -1,4 +1,4 @@
-package com.Case_01;
+package Test.Case_01;
 
 public class Test {
     public static void main(String[] args) {
