@@ -8,11 +8,9 @@ public class Bullet implements Runnable {
     private int x;
     private int y;
     // 炮弹方向
-    private int d;
-    // 炮弹速度
-    private int speed = 5;
+    private final int d;
     // 保存炮弹绘制的面板对象，以便炮弹位置发生变化通知面板重新绘制
-    private MyPanel myPanel;
+    private final MyPanel myPanel;
 
     public Bullet(int x, int y, int d, MyPanel myPanel) {
         // TODO Auto-generated constructor stub
@@ -26,7 +24,7 @@ public class Bullet implements Runnable {
     public void draw(Graphics g) {
         // 设置炮弹为白色
         g.setColor(Color.WHITE);
-        g.fillOval(x, y, 20, 20);
+        g.fillOval(x+15, y, 20, 20);
     }
 
     // 炮弹运行
@@ -48,6 +46,8 @@ public class Bullet implements Runnable {
     }
 
     public void move() {
+        // 炮弹速度
+        int speed = 5;
         if (d == 37) {
             // 向左
             x -= speed;

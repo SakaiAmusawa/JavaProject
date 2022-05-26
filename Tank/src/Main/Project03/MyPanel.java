@@ -8,7 +8,7 @@ import java.awt.event.KeyListener;
 public class MyPanel extends JPanel implements KeyListener {
 
     // 创建坦克对象
-    Tank tank = new Tank(100, 100, this);
+    Tank tank = new Tank(900, 900, this);
 
     @Override
     public void paint(Graphics g) {

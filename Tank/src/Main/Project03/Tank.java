@@ -4,23 +4,23 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Tank {
+    // 移动速度
+    private final int speed = 5;
+    // 存储坦克发射的炮弹
+    private final Bullet[] bullets;
+    // 保存坦克发射的炮弹,默认情况下为null，表示没有发射
+    // private Bullet bullet = null;
+    // 保存坦克绘制的面板对象，以便坦克位置发生变化通知面板重新绘制
+    private final MyPanel myPanel;
     // 坦克坐标
     private int x;
     private int y;
     // 方向
     private int d = 37;
-    // 移动速度
-    private int speed = 5;
     // 默认坦克向上
     private String url = "img/p1tankU.gif";
-    // 存储坦克发射的炮弹
-    private Bullet[] bullets;
     // 数组中子弹个数
     private int num;
-    // 保存坦克发射的炮弹,默认情况下为null，表示没有发射
-    // private Bullet bullet = null;
-    // 保存坦克绘制的面板对象，以便坦克位置发生变化通知面板重新绘制
-    private MyPanel myPanel;
 
     // 构造方法，初始化坦克坐标
     public Tank(int x, int y, MyPanel myPanel) {
@@ -40,7 +40,7 @@ public class Tank {
         // 将坦克图片转换为g能够绘制的信息
         Image image = imageIcon.getImage();
         // 调用g的绘图方法绘制坦克对象，大小为20*20
-        g.drawImage(image, x, y, 20, 20, null);
+        g.drawImage(image, x, y, 50, 50, null);
     }
 
     // 绘制炮弹
