@@ -24,7 +24,7 @@ public class Bullet implements Runnable {
     public void draw(Graphics g) {
         // 设置炮弹为白色
         g.setColor(Color.WHITE);
-        g.fillOval(x+15, y, 20, 20);
+        g.fillOval(x+15, y+15, 20, 20);
     }
 
     // 炮弹运行
