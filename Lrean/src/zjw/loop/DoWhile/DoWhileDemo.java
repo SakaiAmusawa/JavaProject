@@ -7,5 +7,6 @@ public class DoWhileDemo {
             System.out.println("hello");
             i++;
         } while (i < 3);
+
     }
 }
