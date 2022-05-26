@@ -1,4 +1,4 @@
-package zjw.loop;
+package zjw.loop.For;
 
 public class ForTest_01 {
     public static void main(String[] args) {

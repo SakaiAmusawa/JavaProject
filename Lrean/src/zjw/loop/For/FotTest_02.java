@@ -1,4 +1,4 @@
-package zjw.loop;
+package zjw.loop.For;
 //水仙花数案例
 public class FotTest_02 {
     public static void main(String[] args) {
