@@ -1,4 +1,4 @@
-#<p align="center">Java学习之路</p>
+<p align="center">#Java学习之路</p>
 
 -[简介](#简介)  
 -[记录](#记录)  
