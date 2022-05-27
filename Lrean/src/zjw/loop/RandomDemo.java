@@ -8,13 +8,16 @@ import java.util.Scanner;
 public class RandomDemo {
     public static void main(String[] args) {
         Random random = new Random();
-        int luckNumber = random.nextInt(100);
-
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+
+        System.out.println("输入Y开始（N结束）猜数字游戏");
+
+        int luckNumber = random.nextInt(100);
+        String continue_game = scanner.next();
+
+        while (continue_game.equals("Y") || continue_game.equals("y")) {
             System.out.println("猜一个0~99的数");
             int guessNumber = scanner.nextInt();
-
             if (guessNumber > luckNumber) {
                 System.out.println("过大");
             } else if (guessNumber < luckNumber) {
@@ -23,6 +26,7 @@ public class RandomDemo {
                 System.out.println("猜中");
                 break;
             }
+            //思考如何如何重新开始一句游戏
         }
     }
 }
