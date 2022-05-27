@@ -2,7 +2,7 @@ package zjw.loop;
 
 import java.util.Random;
 import java.util.Scanner;
-
+//该实例代码来源于：https://blog.csdn.net/Tony_Starkis/article/details/119147428
 public class RandomDemo_exp {
     public static void main(String[] args) {
         guessNumberGame();
@@ -14,8 +14,7 @@ public class RandomDemo_exp {
         System.out.println("***********************");
         System.out.println("请输入您的选择：");
         Scanner scanner = new Scanner(System.in);
-        int choice = scanner.nextInt();
-        return choice;
+        return scanner.nextInt();
     }
 
     public static void game() {
