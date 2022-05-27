@@ -26,7 +26,7 @@ public class RandomDemo {
                 System.out.println("猜中");
                 break;
             }
-            //思考如何如何重新开始一句游戏
+            //思考如何重新开始一局游戏
         }
     }
 }
