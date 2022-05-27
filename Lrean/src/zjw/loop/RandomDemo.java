@@ -12,21 +12,25 @@ public class RandomDemo {
 
         System.out.println("输入Y开始（N结束）猜数字游戏");
 
-        int luckNumber = random.nextInt(100);
         String continue_game = scanner.next();
+        int luckNumber = random.nextInt(100);
 
-        while (continue_game.equals("Y") || continue_game.equals("y")) {
-            System.out.println("猜一个0~99的数");
-            int guessNumber = scanner.nextInt();
-            if (guessNumber > luckNumber) {
-                System.out.println("过大");
-            } else if (guessNumber < luckNumber) {
-                System.out.println("过小");
-            } else {
-                System.out.println("猜中");
-                break;
+        if (continue_game.equals("Y") || continue_game.equals("y")) {
+            while (true) {
+                System.out.println("猜一个0~99的数");
+                int guessNumber = scanner.nextInt();
+                if (guessNumber > luckNumber) {
+                    System.out.println("过大");
+                } else if (guessNumber < luckNumber) {
+                    System.out.println("过小");
+                } else {
+                    System.out.println("猜中");
+                    break;
+                }
+                //思考如何重新开始一局游戏
             }
-            //思考如何重新开始一局游戏
+        } else if (continue_game.equals("N") || continue_game.equals("n")) {
+            System.out.println("游戏退出");
         }
     }
 }
