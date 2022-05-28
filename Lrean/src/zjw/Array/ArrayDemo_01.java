@@ -19,9 +19,9 @@ public class ArrayDemo_01 {
 
         System.out.println("---------------------------------------------");
         //数组的长度
-        System.out.println(names.length);
+        System.out.println(scores.length);
 
         //数组的最大索引
-        System.out.println(names.length - 1);
+        System.out.println(ages.length - 1);
     }
 }
