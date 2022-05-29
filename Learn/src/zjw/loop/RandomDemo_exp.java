@@ -37,22 +37,17 @@ public class RandomDemo_exp {
         Scanner scanner = new Scanner(System.in);
         int trueNumber = random.nextInt(100) + 1;
         System.out.println(trueNumber);
-//        for (int num = 0; ; ) {
         while (true) {
             System.out.print("请输入一个1~100之间的数：");
             int guessNumber = scanner.nextInt();
             if (guessNumber > trueNumber) {
                 System.out.println("测得数大了");
-//                    num++;
             } else if (guessNumber < trueNumber) {
                 System.out.println("测得数小了");
-//                    num++;
             } else {
-//                    num++;
-                System.out.println("恭喜你猜中了，答案是：" + trueNumber);//+ " " + "您一共测了" + num + "次"
+                System.out.println("恭喜你猜中了，答案是：" + trueNumber);
                 break;
             }
         }
-//        }
     }
 }
