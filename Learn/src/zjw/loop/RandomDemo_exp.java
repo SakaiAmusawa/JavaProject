@@ -2,52 +2,57 @@ package zjw.loop;
 
 import java.util.Random;
 import java.util.Scanner;
-//该实例代码来源于：https://blog.csdn.net/Tony_Starkis/article/details/119147428
+
 public class RandomDemo_exp {
     public static void main(String[] args) {
-        guessNumberGame();
+        Choose();
     }
 
-    public static int menu() {
-        System.out.println("***********************");
-        System.out.println("  1、play      0、exit  ");
-        System.out.println("***********************");
-        System.out.println("请输入您的选择：");
+    public static String menu() {
+        System.out.println("-----------------------");
+        System.out.println("- Y.开始游戏  N.退出游戏 -");
+        System.out.println("-----------------------");
+        System.out.print("请选择是否开始游戏：");
         Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        return scanner.next();
     }
 
-    public static void game() {
+    public static void Choose() {
+        while (true) {
+            String choose = menu();
+            if (choose.equals("Y") || choose.equals("y")) {
+                guess();
+            } else if (choose.equals("N") || choose.equals("n")) {
+                System.out.println("游戏退出");
+                break;
+            } else {
+                System.out.println("输入错误");
+            }
+        }
+
+    }
+
+    public static void guess() {
         Random random = new Random();
-        int toGuess = random.nextInt(100) + 1;
         Scanner scanner = new Scanner(System.in);
+        int trueNumber = random.nextInt(100) + 1;
+        System.out.println(trueNumber);
+//        for (int num = 0; ; ) {
         while (true) {
-            System.out.println("请输入你猜测的数：");
-            int num = scanner.nextInt();
-            if (num > toGuess) {
-                System.out.println("猜大了");
-            } else if (num < toGuess) {
-                System.out.println("猜小了");
+            System.out.print("请输入一个1~100之间的数：");
+            int guessNumber = scanner.nextInt();
+            if (guessNumber > trueNumber) {
+                System.out.println("测得数大了");
+//                    num++;
+            } else if (guessNumber < trueNumber) {
+                System.out.println("测得数小了");
+//                    num++;
             } else {
-                System.out.println("恭喜你，猜对了！");
+//                    num++;
+                System.out.println("恭喜你猜中了，答案是：" + trueNumber);//+ " " + "您一共测了" + num + "次"
                 break;
             }
         }
+//        }
     }
-
-    public static void guessNumberGame() {
-        while (true) {
-            int choice = menu();
-            if (choice == 1) {
-                game();
-            } else if (choice == 0) {
-                System.out.println("白白~");
-                break;
-            } else {
-                System.out.println("输入错误，请重试...");
-            }
-        }
-    }
-
-
 }
