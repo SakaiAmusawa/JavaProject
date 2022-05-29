@@ -1,4 +1,4 @@
-package zjw.loop;
+package zjw.loop.Demo;
 
 
 import java.util.Random;

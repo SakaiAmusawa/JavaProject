@@ -1,4 +1,4 @@
-package zjw.loop;
+package zjw.loop.Demo;
 
 public class BreakAndContinueDemo {
     public static void main(String[] args) {
