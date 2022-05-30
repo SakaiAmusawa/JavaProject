@@ -3,7 +3,7 @@ package zjw.Array.Demo;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayTraverseDemo_ID {
+public class ArrayTraverseDemo_randomOrder {
     //目的：键盘输入一组工号，最终随机输出一组作为排名
 
     public static void main(String[] args) {
