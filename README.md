@@ -25,4 +25,4 @@
 
 ​		2022/5/30
 
-​			对于该路径下（https://github.com/SakaiAmusawa/JavaProject/tree/master/Learn/src/zjw/Array/Demo）的ArrayTraverseDemo_randomOrder和ArrayTraverseDemo_BubbleSort不理解需要进一步的学习。
+​			对于该路径下（JavaProject/Learn/src/zjw/Array/Demo）的ArrayTraverseDemo_randomOrder和ArrayTraverseDemo_BubbleSort不理解需要进一步的学习。
