@@ -3,7 +3,7 @@ package zjw.Array.Demo;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayTraverseTest_GuessNumber {
+public class ArrayTraverseDemo_GuessNumber {
     public static void main(String[] args) {
         //需求：5个1-20之间的随机数，让用户猜，猜中提示，输出该数据在数组中第一次出现的索引，最后打印数组的内容出来
         //没有猜中则继续

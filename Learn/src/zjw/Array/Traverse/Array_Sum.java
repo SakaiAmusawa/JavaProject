@@ -1,6 +1,6 @@
 package zjw.Array.Traverse;
 
-public class ArrayDemo_Sum {
+public class Array_Sum {
     public static void main(String[] args) {
         int[] money = {16, 26, 36, 6, 100};
         int sum = 0;

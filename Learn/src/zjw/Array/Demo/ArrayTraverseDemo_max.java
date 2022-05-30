@@ -1,6 +1,6 @@
 package zjw.Array.Demo;
 
-public class ArrayTraverseTest_max {
+public class ArrayTraverseDemo_max {
     public static void main(String[] args) {
         int[] faceScore = {15, 90, 100, 200, 95, -5};
         int max = faceScore[0];

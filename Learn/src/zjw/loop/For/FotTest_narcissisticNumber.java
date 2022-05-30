@@ -1,6 +1,6 @@
 package zjw.loop.For;
 //水仙花数案例
-public class FotTest_02 {
+public class FotTest_narcissisticNumber {
     public static void main(String[] args) {
         for (int i = 100; i < 999; i++) {
             int g = i % 10;

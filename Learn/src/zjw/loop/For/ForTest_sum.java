@@ -1,6 +1,6 @@
 package zjw.loop.For;
 
-public class ForTest_01 {
+public class ForTest_sum {
     public static void main(String[] args) {
         int sum = 0;
         for (int i = 0; i <= 5; i++) {
