@@ -22,3 +22,7 @@
 ​		2022/5/29
 
 ​			完善了RandomDemo_exp使其功能更加丰富，加深了对loop的理解
+
+​		2022/5/30
+
+​			对于该路径下（https://github.com/SakaiAmusawa/JavaProject/tree/master/Learn/src/zjw/Array/Demo）的ArrayTraverseDemo_randomOrder和ArrayTraverseDemo_BubbleSort不理解需要进一步的学习。
