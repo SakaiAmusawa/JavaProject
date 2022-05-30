@@ -25,8 +25,8 @@ public class ArrayTraverseTest_GuessNumber {
                 }
             }
         }
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + "\t");
+        for (int d : data) {
+            System.out.print(d + "\t");
         }
     }
 }
