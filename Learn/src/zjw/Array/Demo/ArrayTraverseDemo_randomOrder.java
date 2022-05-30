@@ -2,7 +2,7 @@ package zjw.Array.Demo;
 
 import java.util.Random;
 import java.util.Scanner;
-
+//掌握差，需要练习
 public class ArrayTraverseDemo_randomOrder {
     //目的：键盘输入一组工号，最终随机输出一组作为排名
 
