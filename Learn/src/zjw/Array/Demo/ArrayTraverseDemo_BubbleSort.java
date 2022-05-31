@@ -1,4 +1,5 @@
 package zjw.Array.Demo;
+
 //掌握差，需要练习
 public class ArrayTraverseDemo_BubbleSort {
     public static void main(String[] args) {
@@ -8,7 +9,9 @@ public class ArrayTraverseDemo_BubbleSort {
             //i==0 比较的次数3 占位 j=0 1 2
             //i==1 比较的次数2 占位 j=0 1
             //i==2 比较的次数1 占位 j=0
-            for (int j = 0; j < array.length - i-1; j++) {
+
+            //定义一个循环，控制每轮循环的次数以及占位
+            for (int j = 0; j < array.length - i - 1; j++) {
                 //判断j当前位置的元素值 是否大于后一个位置 若大 则交换
                 if (array[j] > array[j + 1]) {
                     int temporary = array[j + 1];
