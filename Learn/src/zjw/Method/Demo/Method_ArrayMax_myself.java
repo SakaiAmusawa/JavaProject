@@ -2,7 +2,7 @@ package zjw.Method.Demo;
 
 import java.util.Scanner;
 
-public class Method_ArrayMax {
+public class Method_ArrayMax_myself {
 
     public static void main(String[] args) {
         Max();
