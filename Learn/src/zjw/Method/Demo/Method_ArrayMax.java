@@ -11,7 +11,7 @@ public class Method_ArrayMax {
     public static void Max() {
         Scanner scanner = new Scanner(System.in);
 
-        //获取数组的长度
+        //定义数组的长度
         System.out.println("请输入字符串长度：");
         int length = scanner.nextInt();
         int[] array = new int[length];
