@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Method_IfOddEven {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("input a number to jude it is oddNumber or evenNumber£º");
+        System.out.print("input a number to judge it is oddNumber or evenNumber£º");
         int a = scanner.nextInt();
         OddEven(a);
     }
