@@ -1,6 +1,7 @@
 package VerificationCode;
 
 import java.util.Random;
+
 //生成验证吗
 public class Test {
     public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class Test {
         Random random = new Random();
         for (int i = 0; i < n; i++) {
             //生成一个随机字符：英文大写 小写 数字 用 0 1 2 代表
-            int type = random.nextInt(4);
+            int type = random.nextInt(3);
             switch (type) {
                 //大写字符（A65-Z90） (0-25)+65
                 case 0 -> {
@@ -26,13 +27,11 @@ public class Test {
                     code.append(ch1);
                 }
                 case 2 -> code.append(random.nextInt(10));
-                case 3 -> {
-                    char ch2 = (char)(random.nextInt(15)+33);
-                    code.append(ch2);
-                }
-            }
 
+            }
         }
+
+
         return code.toString();
     }
 }
