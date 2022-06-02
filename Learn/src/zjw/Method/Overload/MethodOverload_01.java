@@ -9,11 +9,13 @@ public class MethodOverload_01 {
     }
 
     public static void fire() {
-        System.out.println("默认发射1枚导弹");
+//        System.out.println("默认发射1枚导弹");
+        fire("anywhere");
     }
 
     public static void fire(String location) {
-        System.out.println("发射1枚给" + location);
+//        System.out.println("发射1枚给" + location);
+        fire(location, 1);
     }
 
     public static void fire(String location, int num) {
