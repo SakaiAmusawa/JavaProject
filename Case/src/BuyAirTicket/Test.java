@@ -13,12 +13,12 @@ public class Test {
         System.out.print("请输入座位等级：");
         int seat = scanner.nextInt();
 
-        airTicket(fare, month, seat);
+        System.out.println(airTicket(fare, month, seat));
 
 
     }
 
-    public static void airTicket(double fare, int month, int seat) {
+    public static double airTicket(double fare, int month, int seat) {
         if (month >= 5 && month <= 10) {
             switch (seat) {
                 case 1 -> fare *= 0.9;
@@ -35,6 +35,6 @@ public class Test {
         } else {
             System.out.println("输入月份有误");
         }
-        System.out.println("票价为：" + fare);
+        return fare;
     }
 }
