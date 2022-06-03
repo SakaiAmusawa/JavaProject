@@ -42,7 +42,7 @@ public class Test {
         for (int j : bingo) {
             System.out.print(j + "\t");
         }
-        System.out.println("");
+        System.out.println(" ");
         return bingo;
     }
 
