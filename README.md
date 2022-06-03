@@ -27,6 +27,6 @@
 
 ​			对于该路径下（JavaProject/Learn/src/zjw/Array/Demo）的ArrayTraverseDemo_randomOrder和ArrayTraverseDemo_BubbleSort不理解需要进一步的学习。
 
-                 2022/6/2
-                        
-                         case模块下存放着一些案例，需要细品。
+​		2022/6/20
+
+​     Case项目里存放着一些练习案例，有时间细品
