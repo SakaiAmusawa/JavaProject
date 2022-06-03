@@ -1,6 +1,8 @@
+package MakeScore;
+
 import java.util.Scanner;
 
-public class MakeScore {
+public class Test {
     public static void main(String[] args) {
         int[] scores = new int[6];
 
