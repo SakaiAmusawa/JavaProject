@@ -13,6 +13,7 @@ public class Test {
     }
 
     public static void encryption(int[] array) {
+        System.out.print("°µÂëÎª£º");
         int[] first = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             first[i] = array[i] + 5;
