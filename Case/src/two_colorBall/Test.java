@@ -37,9 +37,12 @@ public class Test {
             }
         }
         bingo[bingo.length - 1] = random.nextInt(16) + 1;
+/*
+        作弊：查看中奖号码
         for (int j : bingo) {
             System.out.print(j + "\t");
         }
+*/
         return bingo;
     }
 
@@ -47,7 +50,7 @@ public class Test {
         int[] user = new int[7];
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < user.length - 1; i++) {
-            System.out.print("输入" + (i + 1) + "个红球号码:");
+            System.out.print("输入第" + (i + 1) + "个红球号码:");
             int data = scanner.nextInt();
             user[i] = data;
         }
@@ -85,18 +88,20 @@ public class Test {
 
 
         if (blue_bingo == 1 && red_bingo < 3) {
-            System.out.println("5");
+            System.out.println("中5");
         } else if (blue_bingo == 1 && red_bingo == 3 || blue_bingo == 0 && red_bingo == 4) {
-            System.out.println("10");
+            System.out.println("中10");
         } else if (blue_bingo == 1 && red_bingo == 4 || blue_bingo == 0 && red_bingo == 5) {
-            System.out.println("10");
+            System.out.println("中200");
 
         } else if (blue_bingo == 1 && red_bingo == 5) {
-            System.out.println("3000");
+            System.out.println("中3000");
         } else if (blue_bingo == 0 && red_bingo == 6) {
-            System.out.println("500w");
+            System.out.println("中500w");
         } else if (blue_bingo == 1 && red_bingo == 6) {
-            System.out.println("1000w");
+            System.out.println("中1000w");
+        }else {
+            System.out.println("未中奖");
         }
     }
 }
