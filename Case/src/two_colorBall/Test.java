@@ -37,12 +37,12 @@ public class Test {
             }
         }
         bingo[bingo.length - 1] = random.nextInt(16) + 1;
-/*
-        作弊：查看中奖号码
+
+        //作弊：查看中奖号码
         for (int j : bingo) {
             System.out.print(j + "\t");
         }
-*/
+        System.out.println("");
         return bingo;
     }
 
@@ -66,7 +66,7 @@ public class Test {
 
         for (int i = 0; i < user.length - 1; i++) {
             for (int j = 0; j < bingo.length - 1; j++) {
-                if (user[i] == bingo[i]) {
+                if (user[i] == bingo[j]) {
                     red_bingo++;
                     break;
                 }
