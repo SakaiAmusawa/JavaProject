@@ -16,18 +16,13 @@ public class Test {
         System.out.print("°µÂëÎª£º");
         int[] first = new int[array.length];
         for (int i = 0; i < array.length; i++) {
-            first[i] = array[i] + 5;
+            first[i] = (array[i] + 5)%10;
         }
 
         int[] second = new int[first.length];
         for (int i = 0; i < first.length; i++) {
-            second[i] = first[i] % 10;
-        }
-
-        int[] third = new int[second.length];
-        for (int i = 0; i < second.length; i++) {
-            third[i] = second[second.length - (i + 1)];
-            System.out.print(third[i]);
+            second[i] = first[first.length-(i+1)];
+            System.out.print(second[i]);
         }
     }
 
