@@ -68,7 +68,8 @@ public class shopCarTest {
 
     private static void query(Goods[] shopCar) {
         System.out.println("ID\t\t\tname\t\t\tprice\t\t\tnumber");
-        for (Goods goods : shopCar) {
+        for (int i = 0; i < shopCar.length; i++) {
+            Goods goods =shopCar[i];
             if (goods != null) {
                 System.out.println(goods.id + "\t\t\t" + goods.name + "\t\t\t" + goods.price + "\t\t\t" + goods.buyNumber);
             } else {
