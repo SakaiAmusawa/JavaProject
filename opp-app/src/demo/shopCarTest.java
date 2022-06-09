@@ -9,13 +9,14 @@ public class shopCarTest {
         Goods[] shopCar = new Goods[100];
 
         //搭建操作架构
-
+        OUT:
         while (true) {
             System.out.println("选择命令");
             System.out.println("添加商品到购物车：add");
             System.out.println("查看购物车：query");
             System.out.println("修改购物车：update");
             System.out.println("结算购物车：pay");
+            System.out.println("退出程序：quit");
 
             Scanner scanner = new Scanner(System.in);
             String command = scanner.next();
@@ -33,8 +34,11 @@ public class shopCarTest {
                 case "pay":
                     pay(shopCar);
                     break;
+                case "quit":
+                    break OUT;
                 default:
                     System.out.println("stop idiot");
+                    break;
             }
         }
     }
@@ -87,8 +91,7 @@ public class shopCarTest {
                 System.out.println("错误");
             } else {
                 System.out.println("输入" + goods.name + "的最新数量：");
-                int number = scanner.nextInt();
-                goods.buyNumber = number;
+                goods.buyNumber = scanner.nextInt();
                 query(shopCar);
                 break;
             }
