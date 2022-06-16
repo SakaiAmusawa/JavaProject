@@ -35,6 +35,7 @@ public class shopCarTest {
                     pay(shopCar);
                     break;
                 case "quit":
+                    System.out.println("³ÌÐòÍË³ö");
                     break OUT;
                 default:
                     System.out.println("stop idiot");
